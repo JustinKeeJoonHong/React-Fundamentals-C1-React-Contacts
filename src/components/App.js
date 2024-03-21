@@ -1,4 +1,5 @@
 import "../css/App.css";
+import ListContacts from "./ListContacts";
 
 const App = () => {
   const contacts = [
@@ -21,6 +22,12 @@ const App = () => {
       avatarURL: "http://localhost:5001/tyler.jpg",
     },
   ];
+
+  return (
+    <div>
+      <ListContacts contacts={contacts} />
+    </div>
+  );
 };
 
 export default App;
