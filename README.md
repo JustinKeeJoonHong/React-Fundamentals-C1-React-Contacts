@@ -14,6 +14,8 @@ Most of the commits in this repository correspond to videos in the program.
 npm install
 ```
 
+export NODE_OPTIONS=--openssl-legacy-provider
+
 3a. To access the starter code, checkout the `starter` branch, then start the application.
 
 ```
