@@ -2,7 +2,7 @@ const ListContacts = ({ contacts }) => {
   return (
     <ol className="contact-list">
       {contacts.map((contact) => (
-        <li>{contact.name}</li>
+        <li key={contact.id}>{contact.name}</li>
       ))}
     </ol>
   );
