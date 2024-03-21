@@ -6,7 +6,7 @@ const ListContacts = ({ contacts }) => {
           <div
             className="contact-avatar"
             style={{
-              backgroundImage: `url(${contact.avatarUrl})`,
+              backgroundImage: `url(${contact.avatarURL})`,
             }}
           ></div>
           <div className="contact-details">
