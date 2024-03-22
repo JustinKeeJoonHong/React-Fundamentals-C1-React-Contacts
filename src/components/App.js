@@ -3,6 +3,9 @@ import "../css/App.css";
 import ListContacts from "./ListContacts";
 
 const App = () => {
+  const removeContact = (contact) => {
+    setContacts(contacts.filter((c) => c.id !== contact.id));
+  };
   const [contacts, setContacts] = useState([
     {
       id: "karen",
