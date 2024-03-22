@@ -18,7 +18,7 @@ const ListContacts = ({ contacts, onDeleteContact }) => {
           value={query}
           onChange={(event) => updateQuery(event.target.value)}
         />
-      </div>{" "}
+      </div>
       <ol className="contact-list">
         {contacts.map((contact) => (
           <li key={contact.id} className="contact-list-item">
