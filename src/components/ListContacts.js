@@ -1,6 +1,13 @@
 import PropTypes from "prop-types";
+import { useState } from "react";
 
 const ListContacts = ({ contacts, onDeleteContact }) => {
+  const [query, setQuery] = useState("");
+
+  const updateQuery = (query) => {
+    setQuery(query.trim());
+  };
+
   return (
     <div className="list-contacts">
       <div className="list-contacts-top">
@@ -8,6 +15,8 @@ const ListContacts = ({ contacts, onDeleteContact }) => {
           className="search-contacts"
           type="text"
           placeholder="Search Contacts"
+          value={query}
+          onChange={(event) => updateQuery(event.target.value)}
         />
       </div>{" "}
       <ol className="contact-list">
