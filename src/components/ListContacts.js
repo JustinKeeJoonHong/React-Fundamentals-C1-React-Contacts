@@ -8,6 +8,10 @@ const ListContacts = ({ contacts, onDeleteContact }) => {
     setQuery(query.trim());
   };
 
+  const clearQuery = () => {
+    updateQuery("");
+  };
+
   const showingContacts =
     query === ""
       ? contacts
@@ -32,6 +36,7 @@ const ListContacts = ({ contacts, onDeleteContact }) => {
           <span>
             Now showing {showingContacts.length} of {contacts.length}
           </span>
+          <button onClick={clearQuery}>Show all</button>
         </div>
       )}
       <ol className="contact-list">
