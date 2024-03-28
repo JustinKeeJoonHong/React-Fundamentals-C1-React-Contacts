@@ -12,7 +12,7 @@ const ListContacts = ({ contacts, onDeleteContact }) => {
     query === ""
       ? contacts
       : contacts.filter((c) =>
-          c.name.toLowerCase().includes(query.toLowerCase)
+          c.name.toLowerCase().includes(query.toLowerCase())
         );
 
   return (
