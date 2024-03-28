@@ -27,7 +27,7 @@ const ListContacts = ({ contacts, onDeleteContact }) => {
         />
       </div>
       <ol className="contact-list">
-        {contacts.map((contact) => (
+        {showingContacts.map((contact) => (
           <li key={contact.id} className="contact-list-item">
             <div
               className="contact-avatar"
